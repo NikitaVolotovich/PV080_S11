@@ -2,17 +2,24 @@
 int Static[5];
 int memcheckFailDemo(int* arrayStack, unsigned int arrayStackLen, 
 	int* arrayHeap, unsigned int arrayHeapLen) {
+    
   int Stack[5];
 
-  Static[100] = 0; 
-  Stack[100] = 0; 
+  Static[100] = 0;
+    if(Stack[100] != null){
+        Stack[100] = 0;
+    }
+  
 
   for (int i = 0; i <= 5; i++) Stack [i] = 0;
 
   int* array = new int[5];
   array[100] = 0; 
 
-  arrayStack[100] = 0; 
+    if(arrayStackLen > 100){
+        arrayStack[100] = 0; 
+    }
+  
   arrayHeap[100] = 0; 
 
   for (unsigned int i = 0; i <= arrayStackLen; i++) {
