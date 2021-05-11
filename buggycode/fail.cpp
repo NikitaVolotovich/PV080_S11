@@ -6,7 +6,7 @@ int memcheckFailDemo(int* arrayStack, unsigned int arrayStackLen,
   int Stack[5];
 
   Static[100] = 0;
-    if(Stack[100] != null){
+    if(sizeof(Stack > 100)){
         Stack[100] = 0;
     }
   
